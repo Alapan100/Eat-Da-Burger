@@ -1,10 +1,10 @@
 body {
     width: 100%;
-    background-color: #fff;
-    background-image: url("http://www.seantindell.com/wp-content/uploads/2014/09/bg.jpg");
+    background-image: url("https://images4.alphacoders.com/242/242556.png");
+    background-size: cover;
     overflow: hidden;
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
+    /* color: #fff; */
+    font-family: 'Roboto', sans-serif;  
   }
   
   h2 {
@@ -53,5 +53,5 @@ body {
   
   button {
     background-color: #000;
-    color: yellow;
+    color: red;
   }

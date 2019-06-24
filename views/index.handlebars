@@ -11,8 +11,8 @@
       </p>
       <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
         <input type="hidden" name="devoured" value="true">
-        <button type="submit" class="btn btn-default" style="background-color:black; color:yellow; padding: 15px">Eat
-          it!</button>
+        <button class="submit" data-id="{{id}}" data-hidden="{{devoured}}" style="background-color:black; color:yellow; padding: 15px">{{#if devoured}}Regurgitate back!{{else}}Eat it!{{/if}}
+        </button>
       </form>
     </li>
     {{/unless}}
@@ -49,6 +49,8 @@
     </li>
     <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
       <input type="hidden" name="devoured" value="false">
+      <button class="submit1" data-id="{{id}}" data-hidden="{{devoured}}" style="background-color:black; color:yellow; padding: 15px">Regurgitate back!
+        </button>
       {{/if}}
       {{/each}}
   </ul>
